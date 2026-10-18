@@ -2,6 +2,7 @@
 <p>Open source players such as <a href="https://github.com/video-dev/hls.js/">hls.js</a>, <a href="https://github.com/Dash-Industry-Forum/dash.js/">dash.js</a>, and <a href="https://github.com/shaka-project/shaka-player">shaka-player</a> implement many of the same features independently. This duplication is especially common for standards-based features, such as ID3 parsing, 608 parsing, and CMCD. The players share the intent of these features but not the code. A bug fixed in one player can remain in the others. The goal of this library is to create one place where these utilities can be maintained and distributed.</p>
 <h2 id="project-structure" class="tsd-anchor-link">Project structure<a href="#project-structure" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>This project is a monorepo with three workspaces: <code>libs</code>, <code>docs</code>, and <code>dev</code>. The <code>libs</code> workspace contains the individual libraries, which are published to npm. The <code>docs</code> workspace contains the documentation for all the libraries. The documentation is published as one site on GitHub Pages. The <code>dev</code> workspace is a private development server. The available libraries are:</p>
 <ul>
+<li><code>@svta/cml-abr</code></li>
 <li><code>@svta/cml-cmcd</code></li>
 <li><code>@svta/cml-cmsd</code></li>
 <li><code>@svta/cml-content-steering</code></li>
